@@ -20,7 +20,7 @@ io.on('connection',function(socket){
         messages=messages.slice(-100); // 最新の100件だけ保存
         io.emit('message', msg);
     });
-    
+
 });
 
 http.listen(PORT, function(){
